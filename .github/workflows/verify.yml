@@ -21,6 +21,7 @@ jobs:
             data
             art/models
             art/textures
+            art/previews/player
             audio
             dev
       - name: Install official Godot 4.6 stable
