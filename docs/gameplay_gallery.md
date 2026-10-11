@@ -69,3 +69,33 @@
 飞龙在森林上空飞行的游戏运行画面。
 
 ![森林上空的飞龙](../art/previews/enemy/dread_wyvern_in_forest.png)
+
+## 飞龙俯冲攻击（专项验证观察镜头）
+
+飞龙俯冲接近目标时的攻击动作。
+
+![飞龙俯冲攻击](../art/previews/enemy/dread_wyvern_dive.png)
+
+## 飞龙火球攻击（专项验证观察镜头）
+
+飞龙发射火球，目标脚下显示攻击预警。
+
+![飞龙火球攻击](../art/previews/enemy/dread_wyvern_fireball.png)
+
+## 营地篝火（环境观察镜头）
+
+篝火、帐篷和营地 NPC 的实景。
+
+![营地篝火](../art/previews/scenery/campfire_in_camp.png)
+
+## 营地风车（环境观察镜头）
+
+风车与周围的帐篷、树林。
+
+![营地风车](../art/previews/scenery/windmill_in_camp.png)
+
+## 营地帐篷（环境观察镜头）
+
+帆布帐篷在营地中的细节。
+
+![营地帐篷](../art/previews/scenery/tent_in_camp.png)

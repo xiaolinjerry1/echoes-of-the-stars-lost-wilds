@@ -17,6 +17,12 @@
 | ![升级强化选择界面](art/previews/player/dart_master_upgrade.png) | ![角色跳跃](art/previews/player/dart_jump_in_forest.png) |
 | **苔冠巨兽·双层震波** | **苔冠巨兽·根须攻击** |
 | ![苔冠巨兽释放双层震波](art/previews/player/boss_layered_shockwaves.png) | ![苔冠巨兽的根须攻击区域](art/previews/player/boss_root_fields.png) |
+| **巨大飞龙·俯冲攻击** | **巨大飞龙·火球攻击** |
+| ![飞龙俯冲攻击](art/previews/enemy/dread_wyvern_dive.png) | ![飞龙吐出火球](art/previews/enemy/dread_wyvern_fireball.png) |
+| **营地篝火** | **营地风车与帐篷** |
+| ![营地篝火实景](art/previews/scenery/campfire_in_camp.png) | ![营地风车与帐篷实景](art/previews/scenery/windmill_in_camp.png) |
+
+飞龙攻击画面采用专项验证观察镜头；营地画面展示实际场景中的环境资源。
 
 ## v1.0 内容
 
