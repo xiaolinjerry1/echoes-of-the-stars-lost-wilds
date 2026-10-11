@@ -6,6 +6,18 @@
 
 ![飞镖战斗](art/previews/player/dart_impact_in_forest.png)
 
+## 实机画面
+
+以下为 Godot 中的游戏运行截图。部分战斗画面来自专项验证场景，用于展示技能与特效；环境图采用观察镜头。点击图片可查看原图，更多画面见 [完整实机图集](docs/gameplay_gallery.md)。
+
+| 森林探索与环绕飞镖 | 奥义·影分身之术 |
+|---|---|
+| ![森林中的第三人称飞镖师](art/previews/player/dart_master_in_forest.png) | ![影分身与飞镖](art/previews/player/dart_master_clones.png) |
+| **升级三选一** | **跳跃** |
+| ![升级强化选择界面](art/previews/player/dart_master_upgrade.png) | ![角色跳跃](art/previews/player/dart_jump_in_forest.png) |
+| **苔冠巨兽·双层震波** | **苔冠巨兽·根须攻击** |
+| ![苔冠巨兽释放双层震波](art/previews/player/boss_layered_shockwaves.png) | ![苔冠巨兽的根须攻击区域](art/previews/player/boss_root_fields.png) |
+
 ## v1.0 内容
 
 - 一张森林主世界：营地、树林、溪流、瀑布与巨兽遗迹。
