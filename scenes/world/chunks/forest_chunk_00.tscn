@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scenes/world/world_chunk.gd" id="1_chunk"]
+[ext_resource type="PackedScene" path="res://scenes/world/poi_hunter_cabin.tscn" id="2_cabin"]
+[ext_resource type="Script" path="res://scenes/world/enemy_spawn.gd" id="3_spawn"]
+[ext_resource type="PackedScene" path="res://scenes/world/quest_area.tscn" id="4_area"]
+[ext_resource type="PackedScene" path="res://scenes/world/quest_pickup.tscn" id="5_diary"]
+[ext_resource type="PackedScene" path="res://scenes/world/chest.tscn" id="6_chest"]
+[ext_resource type="PackedScene" path="res://scenes/world/gather_node.tscn" id="7_gather"]
+
+[node name="ForestChunk00" type="Node3D"]
+script = ExtResource("1_chunk")
+chunk_id = "forest_chunk_00"
+
+[node name="HunterCabin" parent="." instance=ExtResource("2_cabin")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72, -0.159, -58)
+
+[node name="QuestAreaHunterCabin" parent="." instance=ExtResource("4_area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -72, -0.159, -58)
+area_id = "hunter_cabin"
+
+[node name="HunterDiary" parent="." instance=ExtResource("5_diary")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, -0.159, -52)
+
+[node name="ChestCabin" parent="." instance=ExtResource("6_chest")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, -0.159, -50)
+chest_id = "chest_cabin"
+loot_table = "chest_normal"
+
+[node name="MageSpawnA" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -64, 0, -64)
+script = ExtResource("3_spawn")
+enemy_type = "mage"
+patrol_radius = 6.0
+
+[node name="MageSpawnB" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, 0, -48)
+script = ExtResource("3_spawn")
+enemy_type = "mage"
+patrol_radius = 6.0
+
+[node name="GatherA" parent="." instance=ExtResource("7_gather")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, -1.813, -30)

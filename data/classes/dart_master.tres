@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ClassData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://data/classes/class_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "dart_master"
+display_name = "飞镖师"
+description = "环绕飞刃，齐射破阵，奥义影分身之术。"
+max_health = 200.0
+base_attack_power = 18.0
+armor = 10.0

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_v33hy"]
+
+[resource]
+script = ExtResource("1_v33hy")
+description = "为营地收集五份森林草药。"
+quest_type = "collect"
+giver_npc = "tom"
+turn_in_npc = "tom"
+objectives = [{
+"count": 5,
+"description": "收集森林草药",
+"target_id": "forest_herb",
+"type": "collect"
+}]
+rewards = {
+"exp": 30,
+"gold": 80,
+"items": [{
+"count": 3,
+"item_id": "heal_potion"
+}]
+}
+offer_lines = Array[String](["草药快用完了，营地就快撑不住。", "帮我采五份森林草药吧——营地周围就有。"])
+complete_lines = Array[String](["太好了，这下伤员有救了。", "这几瓶药剂拿上，别客气。"])
+id = "q_camp_supply"
+display_name = "营地补给"

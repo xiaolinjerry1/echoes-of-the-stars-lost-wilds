@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "leather_helmet"
+display_name = "皮革护头"
+item_type = "helmet"
+quality = "common"
+max_health_bonus = 10.0
+description = "鞣制皮革做的护头，聊胜于无。"

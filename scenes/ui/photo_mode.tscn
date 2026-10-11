@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/photo_mode.gd" id="1_photo"]
+
+[node name="PhotoMode" type="CanvasLayer"]
+layer = 50
+visible = false
+script = ExtResource("1_photo")

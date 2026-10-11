@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="EchoData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="1_a84e0"]
+[ext_resource type="Script" path="res://data/echoes/echo_data.gd" id="2_m3bjs"]
+
+[sub_resource type="Resource" id="Resource_j0lrs"]
+script = ExtResource("1_a84e0")
+description = "发射火球，命中后 2 米范围爆炸并施加灼烧（每秒 3 + 攻击强度×0.2，持续 4 秒）。"
+skill_type = "ranged"
+cooldown = 2.0
+damage_base = 14.0
+damage_coefficient = 1.0
+range = 25.0
+combat_tags = Array[String](["fire"])
+status_effect = "burning"
+status_duration = 4.0
+id = "fireball"
+display_name = "火球"
+
+[sub_resource type="Resource" id="Resource_pf4c8"]
+script = ExtResource("1_a84e0")
+description = "以自身为中心爆发火焰；对处于灼烧的目标伤害 +50% 并刷新灼烧。"
+skill_type = "aoe"
+cooldown = 5.0
+damage_base = 8.0
+damage_coefficient = 0.6
+range = 6.0
+combat_tags = Array[String](["fire"])
+id = "ember_burst"
+display_name = "余烬爆发"
+
+[resource]
+script = ExtResource("2_m3bjs")
+title = "熔炉边的纵火者"
+memory_text = "他说火不是毁灭，是让坚硬的东西重新成形。"
+source_location = "赤脊群山 - 熔炉秘境"
+visual_theme_color = Color(1, 0.4, 0.2, 1)
+echo_skills = Array[ExtResource("1_a84e0")]([SubResource("Resource_j0lrs"), SubResource("Resource_pf4c8")])
+combat_tag = "fire"
+id = "red_furnace_mage"
+display_name = "赤炉术师"

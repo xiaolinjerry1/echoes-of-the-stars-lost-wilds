@@ -1,0 +1,30 @@
+# Godot caches and generated model textures
+.godot/
+/android/
+/art/models/**/*.png
+/art/models/**/*.png.import
+# Private local tooling and production intermediates
+.opencode/
+opencode.json
+AGENTS.md
+/addons/godot_mcp/
+/art/backups/
+/art/references/
+*.blend1
+*.blend2
+# Logs, renders used during production, scratch scripts
+/dev/*
+!/dev/*.gd
+!/dev/*.gd.uid
+!/dev/*.tscn
+!/dev/build_survivor_audio.py
+!/dev/README.md
+# Exported files and sensitive local settings
+/dist/
+export_credentials.cfg
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+__pycache__/

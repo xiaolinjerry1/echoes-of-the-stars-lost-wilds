@@ -1,0 +1,71 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scenes/world/world_chunk.gd" id="1_chunk"]
+[ext_resource type="PackedScene" path="res://scenes/world/poi_waterfall.tscn" id="2_fall"]
+[ext_resource type="PackedScene" path="res://scenes/actors/npc.tscn" id="3_npc"]
+[ext_resource type="PackedScene" path="res://scenes/world/chest.tscn" id="4_chest"]
+[ext_resource type="PackedScene" path="res://scenes/world/quest_area.tscn" id="5_area"]
+[ext_resource type="PackedScene" path="res://scenes/world/gather_node.tscn" id="6_gather"]
+[ext_resource type="Script" path="res://scenes/world/enemy_spawn.gd" id="7_spawn"]
+
+[node name="ForestChunk11" type="Node3D"]
+script = ExtResource("1_chunk")
+chunk_id = "forest_chunk_11"
+
+[node name="Waterfall" parent="." instance=ExtResource("2_fall")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, -0.547, 56)
+
+[node name="RangerWounded" parent="." instance=ExtResource("3_npc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -1.148, 46)
+npc_id = "wounded_ranger"
+display_name = "受伤的巡林者"
+npc_color = Color(0.45, 0.55, 0.4, 1)
+idle_lines = Array[String](["……那几只狼……就在林子深处。", "多亏你来了，我还能撑住。", "把这件事告诉艾琳吧，营地该有个数。"])
+
+[node name="WolfSpawnA" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, 0, 44)
+script = ExtResource("7_spawn")
+enemy_type = "wolf"
+patrol_radius = 8.0
+
+[node name="WolfSpawnB" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 58, 0, 52)
+script = ExtResource("7_spawn")
+enemy_type = "wolf"
+patrol_radius = 8.0
+
+[node name="WolfSpawnC" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0, 30)
+script = ExtResource("7_spawn")
+enemy_type = "wolf"
+patrol_radius = 8.0
+
+[node name="ShamanSpawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 72, 0, 36)
+script = ExtResource("7_spawn")
+enemy_type = "shaman"
+patrol_radius = 6.0
+
+[node name="ChestWolves" parent="." instance=ExtResource("4_chest")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66, -1.243, 30)
+chest_id = "chest_wolves"
+loot_table = "chest_normal"
+
+[node name="ChestWaterfall" parent="." instance=ExtResource("4_chest")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, -0.547, 62)
+chest_id = "chest_waterfall"
+loot_table = "chest_rare"
+rare = true
+
+[node name="QuestAreaForestEast" parent="." instance=ExtResource("5_area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62, -1.187, 40)
+area_id = "forest_east"
+
+[node name="GatherF" parent="." instance=ExtResource("6_gather")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -0.095, 26)
+
+[node name="GatherG" parent="." instance=ExtResource("6_gather")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, -1.210, 70)
+
+[node name="GatherH" parent="." instance=ExtResource("6_gather")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 40, -0.941, 60)

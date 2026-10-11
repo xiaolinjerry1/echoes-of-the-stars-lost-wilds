@@ -1,0 +1,191 @@
+[gd_scene load_steps=24 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player/player.tscn" id="1_player"]
+[ext_resource type="PackedScene" path="res://scenes/actors/base_enemy.tscn" id="2_enemy"]
+[ext_resource type="Script" path="res://scenes/actors/melee_chaser.gd" id="3_chaser"]
+[ext_resource type="Script" path="res://scenes/actors/ranged_caster.gd" id="4_ranged"]
+[ext_resource type="Script" path="res://scenes/actors/charger.gd" id="5_charger"]
+[ext_resource type="Script" path="res://scenes/actors/support.gd" id="6_support"]
+[ext_resource type="Script" path="res://dev/test_enemies.gd" id="7_root"]
+
+[sub_resource type="ProceduralSkyMaterial" id="SkyMat_1"]
+sky_horizon_color = Color(0.6, 0.66, 0.74, 1)
+ground_horizon_color = Color(0.46, 0.44, 0.38, 1)
+
+[sub_resource type="Sky" id="Sky_1"]
+sky_material = SubResource("SkyMat_1")
+
+[sub_resource type="Environment" id="Env_1"]
+background_mode = 1
+sky = SubResource("Sky_1")
+
+[sub_resource type="StandardMaterial3D" id="Mat_ground"]
+albedo_color = Color(0.3, 0.35, 0.28, 1)
+
+[sub_resource type="BoxShape3D" id="Shape_ground"]
+size = Vector3(80, 1, 80)
+
+[sub_resource type="BoxMesh" id="Mesh_ground"]
+size = Vector3(80, 1, 80)
+
+[sub_resource type="StandardMaterial3D" id="Mat_obstacle"]
+albedo_color = Color(0.45, 0.44, 0.42, 1)
+roughness = 0.9
+
+[sub_resource type="BoxShape3D" id="Shape_pillar"]
+size = Vector3(1.5, 2.2, 1.5)
+
+[sub_resource type="BoxMesh" id="Mesh_pillar"]
+material = SubResource("Mat_obstacle")
+size = Vector3(1.5, 2.2, 1.5)
+
+[sub_resource type="BoxShape3D" id="Shape_rock_a"]
+size = Vector3(3, 2, 3)
+
+[sub_resource type="BoxMesh" id="Mesh_rock_a"]
+material = SubResource("Mat_obstacle")
+size = Vector3(3, 2, 3)
+
+[sub_resource type="BoxShape3D" id="Shape_rock_b"]
+size = Vector3(2.5, 1.6, 2.5)
+
+[sub_resource type="BoxMesh" id="Mesh_rock_b"]
+material = SubResource("Mat_obstacle")
+size = Vector3(2.5, 1.6, 2.5)
+
+[sub_resource type="BoxShape3D" id="Shape_wall"]
+size = Vector3(9, 3, 1)
+
+[sub_resource type="BoxMesh" id="Mesh_wall"]
+material = SubResource("Mat_obstacle")
+size = Vector3(9, 3, 1)
+
+[sub_resource type="NavigationMesh" id="NavMesh_1"]
+cell_size = 0.25
+cell_height = 0.25
+agent_height = 1.8
+agent_radius = 0.5
+agent_max_climb = 0.4
+geometry_parsed_geometry_type = 1
+geometry_collision_mask = 1
+geometry_source_geometry_mode = 1
+geometry_source_group_name = "nav_source"
+
+[node name="TestEnemies" type="Node3D"]
+script = ExtResource("7_root")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Env_1")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation = Vector3(-0.9, -0.5, 0)
+shadow_enabled = true
+
+[node name="Ground" type="StaticBody3D" parent="." groups=["nav_source"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("Shape_ground")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("Mesh_ground")
+surface_material_override/0 = SubResource("Mat_ground")
+
+[node name="Pillar" type="StaticBody3D" parent="." groups=["nav_source"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 1.1, -4)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pillar"]
+shape = SubResource("Shape_pillar")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Pillar"]
+mesh = SubResource("Mesh_pillar")
+
+[node name="RockA" type="StaticBody3D" parent="." groups=["nav_source"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 1, -8)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RockA"]
+shape = SubResource("Shape_rock_a")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RockA"]
+mesh = SubResource("Mesh_rock_a")
+
+[node name="RockB" type="StaticBody3D" parent="." groups=["nav_source"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.8, -7)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RockB"]
+shape = SubResource("Shape_rock_b")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="RockB"]
+mesh = SubResource("Mesh_rock_b")
+
+[node name="Wall" type="StaticBody3D" parent="." groups=["nav_source"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.5, 2)
+collision_layer = 1
+collision_mask = 0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall"]
+shape = SubResource("Shape_wall")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Wall"]
+mesh = SubResource("Mesh_wall")
+
+[node name="NavRegion" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavMesh_1")
+
+[node name="MeleeChaserA" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+script = ExtResource("3_chaser")
+
+[node name="MeleeChaserB" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -4)
+script = ExtResource("3_chaser")
+
+[node name="RangedCasterA" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13, 0, -11)
+script = ExtResource("4_ranged")
+
+[node name="RangedCasterB" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0, -13)
+script = ExtResource("4_ranged")
+
+[node name="ChargerA" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, -11)
+script = ExtResource("5_charger")
+
+[node name="ChargerB" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 0, -4)
+script = ExtResource("5_charger")
+
+[node name="SupportA" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -15)
+script = ExtResource("6_support")
+
+[node name="SupportB" parent="." instance=ExtResource("2_enemy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -14)
+script = ExtResource("6_support")
+
+[node name="Hints" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="Hints"]
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 700.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.85)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 15
+text = "怪物测试场：走入侦测范围触发追击（头顶有血条与攻击预警）
+近战=野狼 · 远程=森林法师（保持距离） · 冲锋=苔牙野猪（红环预警，撞柱自眩晕）
+支援=林间祭司（脚下放治疗图腾，可优先打掉）"
+
+[node name="Player" parent="." instance=ExtResource("1_player")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 12)

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "frost_edge"
+display_name = "霜痕之刃"
+item_type = "weapon"
+quality = "rare"
+attack_power = 15.0
+skill_haste = 0.05
+description = "旧观测所遗留的锋刃，触手冰凉。"
+model_path = "res://art/models/player/frost_edge.glb"

@@ -1,0 +1,3858 @@
+{
+  "scope": "Project GLB exports and literal source references; excludes addons and .godot. Blend internals and runtime visuals not inspected.",
+  "assets": [
+    {
+      "path": "art/models/boss/boss_sprout.glb",
+      "triangles": 4020,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 7,
+      "skinned_nodes": 1,
+      "animations": [
+        "idle",
+        "walk",
+        "attack",
+        "heal",
+        "shield",
+        "taunt",
+        "hit",
+        "death"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "boss_sprout_emission"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "boss_sprout_normal"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "boss_sprout_orm"
+        },
+        {
+          "bufferView": 10,
+          "mimeType": "image/png",
+          "name": "boss_sprout_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "boss_sprout_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Crown",
+        "Left",
+        "Right",
+        "Core",
+        "Leg.L",
+        "Leg.R",
+        "Root",
+        "boss_sprout_Mesh",
+        "boss_sprout_Rig"
+      ],
+      "source": "art/source/boss_sprout.blend",
+      "source_exists": true,
+      "preview": "art/previews/boss/boss_sprout.png",
+      "references": [
+        "scenes/dungeons/boss_sprout.gd:27"
+      ]
+    },
+    {
+      "path": "art/models/boss/moss_crown_beast.glb",
+      "triangles": 5818,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 24,
+      "skinned_nodes": 1,
+      "animations": [
+        "MossCrown_idle",
+        "MossCrown_walk",
+        "MossCrown_run",
+        "MossCrown_heavy",
+        "MossCrown_charge_windup",
+        "MossCrown_charge",
+        "MossCrown_recover",
+        "MossCrown_hit",
+        "MossCrown_stagger",
+        "MossCrown_death",
+        "MossCrown_sweep",
+        "MossCrown_stomp",
+        "MossCrown_slam",
+        "MossCrown_tail",
+        "MossCrown_roots",
+        "MossCrown_summon"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "moss_crown_beast_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "moss_crown_beast_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "moss_crown_beast_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "MossCrown_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Hind.L.Foot",
+        "Hind.L.Lower",
+        "Hind.L.Upper",
+        "Hind.R.Foot",
+        "Hind.R.Lower",
+        "Hind.R.Upper",
+        "Front.L.Foot",
+        "Front.L.Lower",
+        "Front.L.Upper",
+        "Front.R.Foot",
+        "Front.R.Lower",
+        "Front.R.Upper",
+        "Ear.L",
+        "Ear.R",
+        "Jaw",
+        "Head",
+        "Neck",
+        "Chest",
+        "Spine",
+        "Tail.03",
+        "Tail.02",
+        "Tail.01",
+        "Hips",
+        "Root",
+        "MossCrown_Mesh",
+        "MossCrown_Rig"
+      ],
+      "source": "art/source/moss_crown_beast.blend",
+      "source_exists": true,
+      "preview": "art/previews/boss/moss_crown_beast.png",
+      "references": [
+        "scenes/dungeons/boss_moss_crown_beast.gd:63",
+        "dev/art_work/boss_before_upgrade.gd:62"
+      ]
+    },
+    {
+      "path": "art/models/enemy/dread_wyvern.glb",
+      "triangles": 9224,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 30,
+      "skinned_nodes": 1,
+      "animations": [
+        "idle",
+        "fly",
+        "dive_windup",
+        "dive",
+        "recover",
+        "fire_windup",
+        "fire",
+        "hit",
+        "stagger",
+        "death",
+        "land"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "dread_wyvern_emission"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "dread_wyvern_normal"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "dread_wyvern_orm"
+        },
+        {
+          "bufferView": 10,
+          "mimeType": "image/png",
+          "name": "dread_wyvern_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "dread_wyvern_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Jaw",
+        "Head",
+        "Neck.02",
+        "Neck.01",
+        "Wing.L.Finger0",
+        "Wing.L.Finger1",
+        "Wing.L.Finger2",
+        "Wing.L.Finger3",
+        "Wing.L.Outer",
+        "Wing.L.Upper",
+        "Wing.R.Finger0",
+        "Wing.R.Finger1",
+        "Wing.R.Finger2",
+        "Wing.R.Finger3",
+        "Wing.R.Outer",
+        "Wing.R.Upper",
+        "Chest",
+        "Spine",
+        "Tail.04",
+        "Tail.03",
+        "Tail.02",
+        "Tail.01",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "dread_wyvern_Mesh",
+        "dread_wyvern_Rig"
+      ],
+      "source": "art/source/dread_wyvern.blend",
+      "source_exists": true,
+      "preview": "art/previews/enemy/dread_wyvern.png",
+      "references": [
+        "scenes/actors/dread_wyvern.gd:40"
+      ]
+    },
+    {
+      "path": "art/models/enemy/forest_mage.glb",
+      "triangles": 4096,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "forest_mage_backstep",
+        "forest_mage_cast",
+        "forest_mage_death",
+        "forest_mage_greet",
+        "forest_mage_hit",
+        "forest_mage_idle",
+        "forest_mage_stagger",
+        "forest_mage_talk",
+        "forest_mage_walk",
+        "forest_mage_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "forest_mage_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "forest_mage_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "forest_mage_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "forest_mage_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "forest_mage_Mesh",
+        "forest_mage_Rig"
+      ],
+      "source": "art/source/forest_mage.blend",
+      "source_exists": true,
+      "preview": "art/previews/enemy/forest_mage.png",
+      "references": [
+        "scenes/actors/ranged_caster.gd:25"
+      ]
+    },
+    {
+      "path": "art/models/enemy/forest_shaman.glb",
+      "triangles": 5464,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "forest_shaman_backstep",
+        "forest_shaman_cast",
+        "forest_shaman_death",
+        "forest_shaman_greet",
+        "forest_shaman_hit",
+        "forest_shaman_idle",
+        "forest_shaman_stagger",
+        "forest_shaman_summon",
+        "forest_shaman_talk",
+        "forest_shaman_walk",
+        "forest_shaman_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "forest_shaman_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "forest_shaman_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "forest_shaman_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "forest_shaman_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "forest_shaman_Mesh",
+        "forest_shaman_Rig"
+      ],
+      "source": "art/source/forest_shaman.blend",
+      "source_exists": true,
+      "preview": "art/previews/enemy/forest_shaman.png",
+      "references": [
+        "scenes/actors/support.gd:28"
+      ]
+    },
+    {
+      "path": "art/models/enemy/moss_boar.glb",
+      "triangles": 3794,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 24,
+      "skinned_nodes": 1,
+      "animations": [
+        "Boar_idle",
+        "Boar_walk",
+        "Boar_run",
+        "Boar_heavy",
+        "Boar_charge_windup",
+        "Boar_charge",
+        "Boar_recover",
+        "Boar_hit",
+        "Boar_stagger",
+        "Boar_death"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "moss_boar_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "moss_boar_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "moss_boar_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "MossBoar_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Hind.L.Foot",
+        "Hind.L.Lower",
+        "Hind.L.Upper",
+        "Hind.R.Foot",
+        "Hind.R.Lower",
+        "Hind.R.Upper",
+        "Front.L.Foot",
+        "Front.L.Lower",
+        "Front.L.Upper",
+        "Front.R.Foot",
+        "Front.R.Lower",
+        "Front.R.Upper",
+        "Ear.L",
+        "Ear.R",
+        "Jaw",
+        "Head",
+        "Neck",
+        "Chest",
+        "Spine",
+        "Tail.03",
+        "Tail.02",
+        "Tail.01",
+        "Hips",
+        "Root",
+        "MossBoar_Mesh",
+        "MossBoar_Rig"
+      ],
+      "source": "art/source/moss_boar.blend",
+      "source_exists": true,
+      "preview": "art/previews/enemy/moss_boar.png",
+      "references": [
+        "scenes/actors/charger.gd:41"
+      ]
+    },
+    {
+      "path": "art/models/enemy/timber_wolf.glb",
+      "triangles": 3910,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 24,
+      "skinned_nodes": 1,
+      "animations": [
+        "backstep",
+        "bite",
+        "death",
+        "hit",
+        "idle",
+        "run",
+        "stagger",
+        "walk"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "timber_wolf_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "timber_wolf_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "timber_wolf_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "TimberWolf_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Hind.L.Foot",
+        "Hind.L.Lower",
+        "Hind.L.Upper",
+        "Hind.R.Foot",
+        "Hind.R.Lower",
+        "Hind.R.Upper",
+        "Front.L.Foot",
+        "Front.L.Lower",
+        "Front.L.Upper",
+        "Front.R.Foot",
+        "Front.R.Lower",
+        "Front.R.Upper",
+        "Ear.L",
+        "Ear.R",
+        "Jaw",
+        "Head",
+        "Neck",
+        "Chest",
+        "Spine",
+        "Tail.03",
+        "Tail.02",
+        "Tail.01",
+        "Hips",
+        "Root",
+        "TimberWolf_Mesh",
+        "TimberWolf_Rig"
+      ],
+      "source": "art/source/timber_wolf.blend",
+      "source_exists": true,
+      "preview": "art/previews/enemy/timber_wolf.png",
+      "references": [
+        "scenes/actors/melee_chaser.gd:34",
+        "dev/preview_timber_wolf.gd:30"
+      ]
+    },
+    {
+      "path": "art/models/player/frost_edge.glb",
+      "triangles": 1630,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "frost_edge_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "frost_edge_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "frost_edge_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "frost_edge_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "FrostEdge_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "FrostEdge_Mesh"
+      ],
+      "source": "art/source/frost_edge.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/frost_edge.png",
+      "references": [
+        "data/items/frost_edge.tres:14"
+      ]
+    },
+    {
+      "path": "art/models/player/iron_sword.glb",
+      "triangles": 574,
+      "primitives": 4,
+      "uv_primitives": 4,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "iron_sword_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "iron_sword_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "iron_sword_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "IronSword_Baked_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Sword_Blade",
+        "Sword_Grip",
+        "Sword_Guard",
+        "Sword_Pommel",
+        "IronSword"
+      ],
+      "source": "art/source/iron_sword.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/iron_sword.png",
+      "references": [
+        "scenes/player/fp_arms.tscn:4",
+        "data/items/iron_sword.tres:14",
+        "data/items/rusty_sword.tres:13",
+        "dev/verify_actor_regressions.gd:37",
+        "dev/verify_iron_sword.gd:34"
+      ]
+    },
+    {
+      "path": "art/models/player/npc_elin.glb",
+      "triangles": 4204,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "npc_elin_backstep",
+        "npc_elin_cast",
+        "npc_elin_death",
+        "npc_elin_greet",
+        "npc_elin_hit",
+        "npc_elin_idle",
+        "npc_elin_stagger",
+        "npc_elin_talk",
+        "npc_elin_walk",
+        "npc_elin_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "npc_elin_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "npc_elin_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "npc_elin_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "npc_elin_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "npc_elin_Mesh",
+        "npc_elin_Rig"
+      ],
+      "source": "art/source/npc_elin.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/npc_elin.png",
+      "references": [
+        "dev/preview_remaining_assets.gd:43",
+        "dev/preview_single_world_wyvern.gd:45"
+      ]
+    },
+    {
+      "path": "art/models/player/npc_glen.glb",
+      "triangles": 4136,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "npc_glen_backstep",
+        "npc_glen_cast",
+        "npc_glen_death",
+        "npc_glen_greet",
+        "npc_glen_hit",
+        "npc_glen_idle",
+        "npc_glen_stagger",
+        "npc_glen_talk",
+        "npc_glen_walk",
+        "npc_glen_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "npc_glen_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "npc_glen_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "npc_glen_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "npc_glen_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "npc_glen_Mesh",
+        "npc_glen_Rig"
+      ],
+      "source": "art/source/npc_glen.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/npc_glen.png",
+      "references": []
+    },
+    {
+      "path": "art/models/player/npc_mara.glb",
+      "triangles": 4204,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "npc_mara_backstep",
+        "npc_mara_cast",
+        "npc_mara_death",
+        "npc_mara_greet",
+        "npc_mara_hit",
+        "npc_mara_idle",
+        "npc_mara_stagger",
+        "npc_mara_talk",
+        "npc_mara_walk",
+        "npc_mara_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "npc_mara_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "npc_mara_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "npc_mara_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "npc_mara_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "npc_mara_Mesh",
+        "npc_mara_Rig"
+      ],
+      "source": "art/source/npc_mara.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/npc_mara.png",
+      "references": []
+    },
+    {
+      "path": "art/models/player/npc_tom.glb",
+      "triangles": 4068,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "npc_tom_backstep",
+        "npc_tom_cast",
+        "npc_tom_death",
+        "npc_tom_greet",
+        "npc_tom_hit",
+        "npc_tom_idle",
+        "npc_tom_stagger",
+        "npc_tom_talk",
+        "npc_tom_walk",
+        "npc_tom_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "npc_tom_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "npc_tom_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "npc_tom_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "npc_tom_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "npc_tom_Mesh",
+        "npc_tom_Rig"
+      ],
+      "source": "art/source/npc_tom.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/npc_tom.png",
+      "references": []
+    },
+    {
+      "path": "art/models/player/npc_wounded_ranger.glb",
+      "triangles": 3980,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 22,
+      "skinned_nodes": 1,
+      "animations": [
+        "npc_wounded_ranger_backstep",
+        "npc_wounded_ranger_cast",
+        "npc_wounded_ranger_death",
+        "npc_wounded_ranger_greet",
+        "npc_wounded_ranger_hit",
+        "npc_wounded_ranger_idle",
+        "npc_wounded_ranger_stagger",
+        "npc_wounded_ranger_talk",
+        "npc_wounded_ranger_walk",
+        "npc_wounded_ranger_wounded"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "npc_wounded_ranger_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "npc_wounded_ranger_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "npc_wounded_ranger_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "npc_wounded_ranger_Painted_PBR.001",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Head",
+        "Neck",
+        "Fingers.L",
+        "Thumb.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Fingers.R",
+        "Thumb.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Chest",
+        "Spine",
+        "Foot.L",
+        "Shin.L",
+        "Thigh.L",
+        "Foot.R",
+        "Shin.R",
+        "Thigh.R",
+        "Hips",
+        "Root",
+        "npc_wounded_ranger_Mesh",
+        "npc_wounded_ranger_Rig"
+      ],
+      "source": "art/source/npc_wounded_ranger.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/npc_wounded_ranger.png",
+      "references": []
+    },
+    {
+      "path": "art/models/player/warrior_arms.glb",
+      "triangles": 2712,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 38,
+      "skinned_nodes": 1,
+      "animations": [
+        "FP_attack_1",
+        "FP_attack_2",
+        "FP_attack_3",
+        "FP_block",
+        "FP_charge",
+        "FP_ember_burst",
+        "FP_fireball",
+        "FP_frost_crystal_bolt",
+        "FP_frost_ring",
+        "FP_hit",
+        "FP_idle",
+        "FP_roar",
+        "FP_sweep"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "warrior_arms_normal"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "warrior_arms_orm"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "warrior_arms_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "WarriorArms_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Index.3.L",
+        "Index.2.L",
+        "Index.1.L",
+        "Little.3.L",
+        "Little.2.L",
+        "Little.1.L",
+        "Middle.3.L",
+        "Middle.2.L",
+        "Middle.1.L",
+        "Ring.3.L",
+        "Ring.2.L",
+        "Ring.1.L",
+        "Thumb.3.L",
+        "Thumb.2.L",
+        "Thumb.1.L",
+        "Hand.L",
+        "Forearm.L",
+        "UpperArm.L",
+        "Index.3.R",
+        "Index.2.R",
+        "Index.1.R",
+        "Little.3.R",
+        "Little.2.R",
+        "Little.1.R",
+        "Middle.3.R",
+        "Middle.2.R",
+        "Middle.1.R",
+        "Ring.3.R",
+        "Ring.2.R",
+        "Ring.1.R",
+        "Thumb.3.R",
+        "Thumb.2.R",
+        "Thumb.1.R",
+        "Weapon.R",
+        "Hand.R",
+        "Forearm.R",
+        "UpperArm.R",
+        "Root",
+        "WarriorArms_Mesh",
+        "WarriorArms_Rig"
+      ],
+      "source": "art/source/warrior_arms.blend",
+      "source_exists": true,
+      "preview": "art/previews/player/warrior_arms.png",
+      "references": [
+        "scenes/player/fp_arms.tscn:5"
+      ]
+    },
+    {
+      "path": "art/models/prop/camp_forge.glb",
+      "triangles": 2586,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "camp_forge_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "camp_forge_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "camp_forge_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "camp_forge_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "CampForge_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "CampForge_Mesh"
+      ],
+      "source": "art/source/camp_forge.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/camp_forge.png",
+      "references": [
+        "scenes/world/camp.gd:11"
+      ]
+    },
+    {
+      "path": "art/models/prop/chest.glb",
+      "triangles": 2836,
+      "primitives": 2,
+      "uv_primitives": 2,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "chest_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "chest_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "chest_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Chest_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Body",
+        "Lid"
+      ],
+      "source": "art/source/chest.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/chest.png",
+      "references": [
+        "scenes/world/chest.gd:10"
+      ]
+    },
+    {
+      "path": "art/models/prop/heal_totem.glb",
+      "triangles": 888,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "heal_totem_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "heal_totem_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "heal_totem_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "heal_totem_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "HealTotem_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "HealTotem_Mesh"
+      ],
+      "source": "art/source/heal_totem.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/heal_totem.png",
+      "references": [
+        "scenes/actors/heal_totem.gd:15"
+      ]
+    },
+    {
+      "path": "art/models/prop/herb.glb",
+      "triangles": 2696,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "herb_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "herb_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "herb_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Herb_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Herb_Mesh"
+      ],
+      "source": "art/source/herb.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/herb.png",
+      "references": [
+        "scenes/world/gather_node.gd:15"
+      ]
+    },
+    {
+      "path": "art/models/prop/storage_crate.glb",
+      "triangles": 3712,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "storage_crate_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "storage_crate_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "storage_crate_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "StorageCrate_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "StorageCrate_Mesh"
+      ],
+      "source": "art/source/storage_crate.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/storage_crate.png",
+      "references": [
+        "scenes/world/camp.gd:10"
+      ]
+    },
+    {
+      "path": "art/models/prop/wyvern_fireball.glb",
+      "triangles": 320,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "wyvern_fireball_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "wyvern_fireball_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "wyvern_fireball_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "wyvern_fireball_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "wyvern_fireball_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "wyvern_fireball_Mesh"
+      ],
+      "source": "art/source/wyvern_fireball.blend",
+      "source_exists": true,
+      "preview": "art/previews/prop/wyvern_fireball.png",
+      "references": [
+        "scenes/combat/wyvern_fireball.gd:24"
+      ]
+    },
+    {
+      "path": "art/models/scenery/campfire.glb",
+      "triangles": 3346,
+      "primitives": 4,
+      "uv_primitives": 4,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [
+        "Animation"
+      ],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "campfire_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "campfire_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "campfire_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "campfire_albedo"
+        },
+        {
+          "bufferView": 14,
+          "mimeType": "image/png",
+          "name": "campfire_flame"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Campfire_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        },
+        {
+          "name": "Campfire_Flame",
+          "slots": [
+            "emissiveTexture",
+            "pbrMetallicRoughness.baseColorTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Campfire_Mesh",
+        "Flame0",
+        "Flame1",
+        "Flame2"
+      ],
+      "source": "art/source/campfire.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/campfire.png",
+      "references": [
+        "scenes/world/camp.gd:8"
+      ]
+    },
+    {
+      "path": "art/models/scenery/creek_bank.glb",
+      "triangles": 2,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "creek_bank_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "creek_bank_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "creek_bank_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "creek_bank_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "creek_bank_Mesh"
+      ],
+      "source": "art/source/creek_bank.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/creek_bank.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:305"
+      ]
+    },
+    {
+      "path": "art/models/scenery/creek_water.glb",
+      "triangles": 2,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "creek_water_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "creek_water_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "creek_water_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "creek_water_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "creek_water_Mesh"
+      ],
+      "source": "art/source/creek_water.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/creek_water.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:295"
+      ]
+    },
+    {
+      "path": "art/models/scenery/dungeon_gate.glb",
+      "triangles": 2156,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "dungeon_gate_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "dungeon_gate_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "dungeon_gate_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "dungeon_gate_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "DungeonGate_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "DungeonGate_Mesh"
+      ],
+      "source": "art/source/dungeon_gate.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/dungeon_gate.png",
+      "references": [
+        "scenes/dungeons/dungeon_entrance.gd:10",
+        "scenes/dungeons/forest_grove_dungeon.gd:151"
+      ]
+    },
+    {
+      "path": "art/models/scenery/dungeon_pillar.glb",
+      "triangles": 3368,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "dungeon_pillar_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "dungeon_pillar_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "dungeon_pillar_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "dungeon_pillar_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "DungeonPillar_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "DungeonPillar_Mesh"
+      ],
+      "source": "art/source/dungeon_pillar.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/dungeon_pillar.png",
+      "references": [
+        "scenes/dungeons/dungeon_pillar.gd:7"
+      ]
+    },
+    {
+      "path": "art/models/scenery/echo_stone.glb",
+      "triangles": 1180,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "echo_stone_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "echo_stone_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "echo_stone_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "echo_stone_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "EchoStone_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "EchoStone_Mesh"
+      ],
+      "source": "art/source/echo_stone.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/echo_stone.png",
+      "references": [
+        "scenes/world/echo_stone.gd:11"
+      ]
+    },
+    {
+      "path": "art/models/scenery/forest_dirt.glb",
+      "triangles": 2,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "forest_dirt_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "forest_dirt_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "forest_dirt_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "forest_dirt_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "forest_dirt_Mesh"
+      ],
+      "source": "art/source/forest_dirt.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/forest_dirt.png",
+      "references": [
+        "scenes/dungeons/forest_grove_dungeon.gd:122",
+        "scenes/world/terrain_builder.gd:10"
+      ]
+    },
+    {
+      "path": "art/models/scenery/forest_grass.glb",
+      "triangles": 2,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "forest_grass_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "forest_grass_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "forest_grass_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "forest_grass_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "forest_grass_Mesh"
+      ],
+      "source": "art/source/forest_grass.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/forest_grass.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:9"
+      ]
+    },
+    {
+      "path": "art/models/scenery/grass_tuft.glb",
+      "triangles": 144,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "grass_tuft_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "grass_tuft_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "grass_tuft_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "grass_tuft_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "grass_tuft_Mesh"
+      ],
+      "source": "art/source/grass_tuft.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/grass_tuft.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:432"
+      ]
+    },
+    {
+      "path": "art/models/scenery/hunter_broken_wall.glb",
+      "triangles": 440,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "hunter_broken_wall_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "hunter_broken_wall_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "hunter_broken_wall_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "hunter_broken_wall_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "hunter_broken_wall_Mesh"
+      ],
+      "source": "art/source/hunter_broken_wall.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/hunter_broken_wall.png",
+      "references": [
+        "scenes/world/poi_hunter_cabin.gd:8"
+      ]
+    },
+    {
+      "path": "art/models/scenery/hunter_cabin.glb",
+      "triangles": 3158,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "hunter_cabin_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "hunter_cabin_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "hunter_cabin_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "hunter_cabin_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "hunter_cabin_Mesh"
+      ],
+      "source": "art/source/hunter_cabin.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/hunter_cabin.png",
+      "references": [
+        "scenes/world/poi_hunter_cabin.gd:3"
+      ]
+    },
+    {
+      "path": "art/models/scenery/hunter_fence.glb",
+      "triangles": 440,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "hunter_fence_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "hunter_fence_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "hunter_fence_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "hunter_fence_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "hunter_fence_Mesh"
+      ],
+      "source": "art/source/hunter_fence.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/hunter_fence.png",
+      "references": [
+        "scenes/world/poi_hunter_cabin.gd:12"
+      ]
+    },
+    {
+      "path": "art/models/scenery/hut.glb",
+      "triangles": 4832,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "hut_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "hut_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "hut_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "CampHut_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "CampHut_Mesh"
+      ],
+      "source": "art/source/hut.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/hut.png",
+      "references": [
+        "scenes/world/camp.gd:12"
+      ]
+    },
+    {
+      "path": "art/models/scenery/observatory_altar.glb",
+      "triangles": 216,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "observatory_altar_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "observatory_altar_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "observatory_altar_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "observatory_altar_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "observatory_altar_Mesh"
+      ],
+      "source": "art/source/observatory_altar.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/observatory_altar.png",
+      "references": [
+        "scenes/world/poi_observatory.gd:21"
+      ]
+    },
+    {
+      "path": "art/models/scenery/observatory_pillar_broken.glb",
+      "triangles": 116,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_broken_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_broken_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_broken_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "observatory_pillar_broken_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "observatory_pillar_broken_Mesh"
+      ],
+      "source": "art/source/observatory_pillar_broken.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/observatory_pillar_broken.png",
+      "references": [
+        "scenes/world/poi_observatory.gd:16"
+      ]
+    },
+    {
+      "path": "art/models/scenery/observatory_pillar_fallen.glb",
+      "triangles": 176,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_fallen_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_fallen_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "observatory_pillar_fallen_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "observatory_pillar_fallen_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "observatory_pillar_fallen_Mesh"
+      ],
+      "source": "art/source/observatory_pillar_fallen.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/observatory_pillar_fallen.png",
+      "references": [
+        "scenes/world/poi_observatory.gd:19"
+      ]
+    },
+    {
+      "path": "art/models/scenery/observatory_wall.glb",
+      "triangles": 792,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "observatory_wall_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "observatory_wall_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "observatory_wall_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "observatory_wall_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "observatory_wall_Mesh"
+      ],
+      "source": "art/source/observatory_wall.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/observatory_wall.png",
+      "references": [
+        "scenes/dungeons/forest_grove_dungeon.gd:201",
+        "scenes/world/poi_observatory.gd:27"
+      ]
+    },
+    {
+      "path": "art/models/scenery/river_pebbles.glb",
+      "triangles": 320,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "river_pebbles_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "river_pebbles_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "river_pebbles_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "river_pebbles_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "river_pebbles_Mesh"
+      ],
+      "source": "art/source/river_pebbles.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/river_pebbles.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:358"
+      ]
+    },
+    {
+      "path": "art/models/scenery/rock.glb",
+      "triangles": 806,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "rock_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "rock_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "rock_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "ForestRock_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "ForestRock_Mesh"
+      ],
+      "source": "art/source/rock.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/rock.png",
+      "references": [
+        "scenes/dungeons/forest_grove_dungeon.gd:175",
+        "scenes/world/terrain_builder.gd:427",
+        "scenes/world/terrain_builder.gd:543"
+      ]
+    },
+    {
+      "path": "art/models/scenery/stone_pillar.glb",
+      "triangles": 476,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "stone_pillar_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "stone_pillar_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "stone_pillar_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "stone_pillar_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "stone_pillar_Mesh"
+      ],
+      "source": "art/source/stone_pillar.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/stone_pillar.png",
+      "references": [
+        "scenes/world/poi_observatory.gd:3"
+      ]
+    },
+    {
+      "path": "art/models/scenery/tent.glb",
+      "triangles": 1876,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "tent_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "tent_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "tent_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Tent_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Tent_Mesh"
+      ],
+      "source": "art/source/tent.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/tent.png",
+      "references": [
+        "scenes/world/camp.gd:9"
+      ]
+    },
+    {
+      "path": "art/models/scenery/tree_a.glb",
+      "triangles": 1652,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "tree_a_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "tree_a_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "tree_a_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "tree_a_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "tree_a_Mesh"
+      ],
+      "source": "art/source/tree_a.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/tree_a.png",
+      "references": [
+        "scenes/dungeons/forest_grove_dungeon.gd:182",
+        "scenes/world/terrain_builder.gd:425",
+        "scenes/world/terrain_builder.gd:539"
+      ]
+    },
+    {
+      "path": "art/models/scenery/tree_b.glb",
+      "triangles": 1924,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "tree_b_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "tree_b_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "tree_b_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "tree_b_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "tree_b_Mesh"
+      ],
+      "source": "art/source/tree_b.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/tree_b.png",
+      "references": [
+        "scenes/world/terrain_builder.gd:426",
+        "scenes/world/terrain_builder.gd:541"
+      ]
+    },
+    {
+      "path": "art/models/scenery/waterfall_cliff.glb",
+      "triangles": 1422,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "waterfall_cliff_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "waterfall_cliff_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "waterfall_cliff_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "WaterfallCliff_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "WaterfallCliff_Mesh"
+      ],
+      "source": "art/source/waterfall_cliff.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/waterfall_cliff.png",
+      "references": [
+        "scenes/world/poi_waterfall.gd:3"
+      ]
+    },
+    {
+      "path": "art/models/scenery/waterfall_curtain.glb",
+      "triangles": 1152,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "waterfall_curtain_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "waterfall_curtain_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "waterfall_curtain_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "waterfall_curtain_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "waterfall_curtain_Mesh"
+      ],
+      "source": "art/source/waterfall_curtain.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/waterfall_curtain.png",
+      "references": [
+        "scenes/world/poi_waterfall.gd:13"
+      ]
+    },
+    {
+      "path": "art/models/scenery/waterfall_pond.glb",
+      "triangles": 96,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "waterfall_pond_normal"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "waterfall_pond_orm"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "waterfall_pond_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "waterfall_pond_Painted_PBR",
+          "slots": [
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "waterfall_pond_Mesh"
+      ],
+      "source": "art/source/waterfall_pond.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/waterfall_pond.png",
+      "references": [
+        "scenes/world/poi_waterfall.gd:14"
+      ]
+    },
+    {
+      "path": "art/models/scenery/windmill.glb",
+      "triangles": 4772,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "windmill_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "windmill_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "windmill_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "windmill_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "Windmill_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Windmill_Mesh"
+      ],
+      "source": "art/source/windmill.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/windmill.png",
+      "references": [
+        "scenes/world/camp.gd:6"
+      ]
+    },
+    {
+      "path": "art/models/scenery/windmill_blades.glb",
+      "triangles": 1916,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 0,
+      "skins": 0,
+      "joints": 0,
+      "skinned_nodes": 0,
+      "animations": [],
+      "images": [
+        {
+          "bufferView": 5,
+          "mimeType": "image/png",
+          "name": "windmill_blades_emission"
+        },
+        {
+          "bufferView": 6,
+          "mimeType": "image/png",
+          "name": "windmill_blades_normal"
+        },
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "windmill_blades_orm"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "windmill_blades_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "WindmillBlades_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "WindmillBlades_Mesh"
+      ],
+      "source": "art/source/windmill_blades.blend",
+      "source_exists": true,
+      "preview": "art/previews/scenery/windmill.png",
+      "references": [
+        "scenes/world/camp.gd:7"
+      ]
+    },
+    {
+      "path": "art/models/spirit/flame_crystal.glb",
+      "triangles": 420,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 5,
+      "skinned_nodes": 1,
+      "animations": [
+        "idle",
+        "walk",
+        "attack",
+        "heal",
+        "shield",
+        "taunt",
+        "hit",
+        "death"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "flame_crystal_emission"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "flame_crystal_normal"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "flame_crystal_orm"
+        },
+        {
+          "bufferView": 10,
+          "mimeType": "image/png",
+          "name": "flame_crystal_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "flame_crystal_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Crown",
+        "Left",
+        "Right",
+        "Core",
+        "Root",
+        "flame_crystal_Mesh",
+        "flame_crystal_Rig"
+      ],
+      "source": "art/source/flame_crystal.blend",
+      "source_exists": true,
+      "preview": "art/previews/spirit/flame_crystal.png",
+      "references": [
+        "data/spirits/flame_crystal.tres:11"
+      ]
+    },
+    {
+      "path": "art/models/spirit/glow_wisp.glb",
+      "triangles": 1684,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 5,
+      "skinned_nodes": 1,
+      "animations": [
+        "idle",
+        "walk",
+        "attack",
+        "heal",
+        "shield",
+        "taunt",
+        "hit",
+        "death"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "glow_wisp_emission"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "glow_wisp_normal"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "glow_wisp_orm"
+        },
+        {
+          "bufferView": 10,
+          "mimeType": "image/png",
+          "name": "glow_wisp_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "glow_wisp_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Crown",
+        "Left",
+        "Right",
+        "Core",
+        "Root",
+        "glow_wisp_Mesh",
+        "glow_wisp_Rig"
+      ],
+      "source": "art/source/glow_wisp.blend",
+      "source_exists": true,
+      "preview": "art/previews/spirit/glow_wisp.png",
+      "references": [
+        "data/spirits/glow_wisp.tres:11"
+      ]
+    },
+    {
+      "path": "art/models/spirit/stone_guardian.glb",
+      "triangles": 3144,
+      "primitives": 1,
+      "uv_primitives": 1,
+      "weighted_primitives": 1,
+      "skins": 1,
+      "joints": 7,
+      "skinned_nodes": 1,
+      "animations": [
+        "idle",
+        "walk",
+        "attack",
+        "heal",
+        "shield",
+        "taunt",
+        "hit",
+        "death"
+      ],
+      "images": [
+        {
+          "bufferView": 7,
+          "mimeType": "image/png",
+          "name": "stone_guardian_emission"
+        },
+        {
+          "bufferView": 8,
+          "mimeType": "image/png",
+          "name": "stone_guardian_normal"
+        },
+        {
+          "bufferView": 9,
+          "mimeType": "image/png",
+          "name": "stone_guardian_orm"
+        },
+        {
+          "bufferView": 10,
+          "mimeType": "image/png",
+          "name": "stone_guardian_albedo"
+        }
+      ],
+      "materials": [
+        {
+          "name": "stone_guardian_Painted_PBR",
+          "slots": [
+            "emissiveTexture",
+            "normalTexture",
+            "occlusionTexture",
+            "pbrMetallicRoughness.baseColorTexture",
+            "pbrMetallicRoughness.metallicRoughnessTexture"
+          ]
+        }
+      ],
+      "nodes": [
+        "Crown",
+        "Left",
+        "Right",
+        "Core",
+        "Leg.L",
+        "Leg.R",
+        "Root",
+        "stone_guardian_Mesh",
+        "stone_guardian_Rig"
+      ],
+      "source": "art/source/stone_guardian.blend",
+      "source_exists": true,
+      "preview": "art/previews/spirit/stone_guardian.png",
+      "references": [
+        "data/spirits/stone_guardian.tres:11"
+      ]
+    }
+  ],
+  "missing_model_references": {},
+  "procedural_candidates": [
+    {
+      "source": "scenes/actors/base_enemy.gd:62",
+      "code": "var _flash_material: StandardMaterial3D = null"
+    },
+    {
+      "source": "scenes/actors/base_enemy.gd:514",
+      "code": "var mesh := CapsuleMesh.new()"
+    },
+    {
+      "source": "scenes/actors/base_enemy.gd:517",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/actors/base_enemy.gd:554",
+      "code": "_flash_material = StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/actors/dread_wyvern.gd:210",
+      "code": "var ring := TorusMesh.new()"
+    },
+    {
+      "source": "scenes/actors/dread_wyvern.gd:215",
+      "code": "var mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/actors/npc.gd:92",
+      "code": "var mesh := body.mesh as CapsuleMesh"
+    },
+    {
+      "source": "scenes/actors/npc.gd:95",
+      "code": "var material := mesh.material as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/actors/npc.gd:98",
+      "code": "material = material.duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/actors/npc.tscn:10",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_body\"]"
+    },
+    {
+      "source": "scenes/actors/npc.tscn:14",
+      "code": "[sub_resource type=\"CapsuleMesh\" id=\"Mesh_body\"]"
+    },
+    {
+      "source": "scenes/actors/npc.tscn:19",
+      "code": "[sub_resource type=\"SphereMesh\" id=\"Mesh_head\"]"
+    },
+    {
+      "source": "scenes/combat/enemy_bolt.gd:45",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/enemy_bolt.gd:48",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/fireball.gd:53",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/fireball.gd:58",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/frost_bolt.gd:41",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/frost_bolt.gd:46",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/hit_effect.gd:39",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/hit_effect.gd:42",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/loot_drop.gd:120",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/loot_drop.gd:125",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/ring_effect.gd:14",
+      "code": "var mesh := TorusMesh.new()"
+    },
+    {
+      "source": "scenes/combat/ring_effect.gd:17",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/combat/spirit_fireball.gd:42",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/combat/spirit_fireball.gd:45",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_moss_crown_beast.gd:94",
+      "code": "var line_mesh := BoxMesh.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_moss_crown_beast.gd:96",
+      "code": "var line_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_moss_crown_beast.gd:111",
+      "code": "var wedge_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_moss_crown_beast.gd:511",
+      "code": "var ring := TorusMesh.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_sprout.gd:40",
+      "code": "var mesh := CylinderMesh.new()"
+    },
+    {
+      "source": "scenes/dungeons/boss_sprout.gd:45",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:26",
+      "code": "fallback.add_child(PropFactory.box(Vector3(1.1, 4.0, 1.1), Color(0.44, 0.44, 0.46), Vector3(side * 2.0, 2.0, 0)))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:27",
+      "code": "fallback.add_child(PropFactory.box(Vector3(5.4, 0.9, 1.2), Color(0.40, 0.40, 0.42), Vector3(0, 4.2, 0)))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:28",
+      "code": "var dark := PropFactory.box(Vector3(3.2, 3.6, 0.4), Color(0.04, 0.05, 0.06), Vector3(0, 1.8, 0.2))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:29",
+      "code": "var dark_mat := dark.material_override as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:34",
+      "code": "var glow := PropFactory.sphere(0.14, Color(0.5, 0.9, 0.6), Vector3(side * 1.3, 3.1, -0.4))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_entrance.gd:35",
+      "code": "var glow_mat := glow.material_override as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_pillar.gd:25",
+      "code": "fallback.add_child(PropFactory.cylinder(0.85, 0.6, Color(0.48, 0.47, 0.44), Vector3(0, 0.3, 0), 1.0, 10))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_pillar.gd:26",
+      "code": "fallback.add_child(PropFactory.cylinder(0.55, 4.0, Color(0.55, 0.54, 0.5), Vector3(0, 2.6, 0), 0.6, 10))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_pillar.gd:27",
+      "code": "fallback.add_child(PropFactory.box(Vector3(1.5, 0.5, 1.5), Color(0.44, 0.43, 0.4), Vector3(0, 4.85, 0)))"
+    },
+    {
+      "source": "scenes/dungeons/dungeon_pillar.gd:70",
+      "code": "var chunk := PropFactory.box("
+    },
+    {
+      "source": "scenes/dungeons/forest_grove_dungeon.gd:119",
+      "code": "var ground_visual := PropFactory.box(Vector3(60.0, 1.0, 60.0), Color(0.34, 0.5, 0.26), Vector3(0, -0.5, 0))"
+    },
+    {
+      "source": "scenes/dungeons/forest_grove_dungeon.gd:191",
+      "code": "var result: StandardMaterial3D"
+    },
+    {
+      "source": "scenes/dungeons/forest_grove_dungeon.gd:193",
+      "code": "result = meshes[0].get_active_material(0).duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/fp_arms.gd:12",
+      "code": "var _arm_materials: Array[StandardMaterial3D] = []"
+    },
+    {
+      "source": "scenes/player/fp_arms.gd:16",
+      "code": "var _weapon_glow_material: StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/fp_arms.gd:64",
+      "code": "var source := mesh_instance.mesh.surface_get_material(surface) as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/fp_arms.gd:66",
+      "code": "var material := source.duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/fp_arms.gd:113",
+      "code": "_weapon_glow_material = StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/player/spirit_entity.gd:49",
+      "code": "var sphere := _placeholder.mesh as SphereMesh"
+    },
+    {
+      "source": "scenes/player/spirit_entity.gd:51",
+      "code": "var material := sphere.material as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/spirit_entity.gd:53",
+      "code": "material = material.duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/player/spirit_entity.tscn:5",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_placeholder\"]"
+    },
+    {
+      "source": "scenes/player/spirit_entity.tscn:11",
+      "code": "[sub_resource type=\"SphereMesh\" id=\"Mesh_placeholder\"]"
+    },
+    {
+      "source": "scenes/world/camp.gd:75",
+      "code": "fallback.add_child(PropFactory.cylinder(2.3, 8.6, Color(0.74, 0.70, 0.62), Vector3(0, 4.3, 0), 1.9, 12))"
+    },
+    {
+      "source": "scenes/world/camp.gd:76",
+      "code": "fallback.add_child(PropFactory.cylinder(2.1, 1.7, Color(0.42, 0.30, 0.20), Vector3(0, 9.4, 0), 0.5, 12))"
+    },
+    {
+      "source": "scenes/world/camp.gd:77",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.6, 1.0, 0.05), Color(0.35, 0.25, 0.16), Vector3(0, 0.5, 2.3)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:86",
+      "code": "var blade := PropFactory.box(Vector3(0.22, 4.6, 0.08), Color(0.60, 0.48, 0.32))"
+    },
+    {
+      "source": "scenes/world/camp.gd:92",
+      "code": "blade_fallback.add_child(PropFactory.sphere(0.35, Color(0.35, 0.26, 0.18)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:108",
+      "code": "fallback.add_child(PropFactory.sphere(0.26, Color(0.42, 0.40, 0.38), Vector3(cos(angle) * 0.95, 0.12, sin(angle) * 0.95)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:110",
+      "code": "var log_mesh := PropFactory.cylinder(0.12, 1.4, Color(0.30, 0.20, 0.12), Vector3(0, 0.18, 0))"
+    },
+    {
+      "source": "scenes/world/camp.gd:165",
+      "code": "var quad := QuadMesh.new()"
+    },
+    {
+      "source": "scenes/world/camp.gd:167",
+      "code": "var flame_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/camp.gd:187",
+      "code": "fallback.add_child(PropFactory.cylinder(1.7, 1.9, Color(0.58, 0.50, 0.36), Vector3(0, 0.95, 0), 0.0, 3))"
+    },
+    {
+      "source": "scenes/world/camp.gd:188",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.05, 0.9, 1.0), Color(0.28, 0.22, 0.15), Vector3(0, 0.4, 0.75)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:201",
+      "code": "fallback.add_child(PropFactory.box(Vector3(4.4, 2.6, 3.4), Color(0.50, 0.38, 0.26), Vector3(0, 1.3, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:202",
+      "code": "fallback.add_child(PropFactory.cylinder(2.6, 1.2, Color(0.36, 0.26, 0.16), Vector3(0, 3.1, 0), 0.0, 4))"
+    },
+    {
+      "source": "scenes/world/camp.gd:203",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.9, 1.8, 0.1), Color(0.30, 0.22, 0.14), Vector3(0, 0.9, 1.75)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:222",
+      "code": "fallback.add_child(PropFactory.cylinder(0.4, 0.55, Color(0.35, 0.28, 0.20), Vector3(0, 0.27, 0), -1.0, 8))"
+    },
+    {
+      "source": "scenes/world/camp.gd:223",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.55, 0.18, 0.28), Color(0.28, 0.30, 0.33), Vector3(0, 0.78, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:224",
+      "code": "fallback.add_child(PropFactory.box(Vector3(1.5, 1.1, 1.2), Color(0.40, 0.36, 0.34), Vector3(1.6, 0.55, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:260",
+      "code": "fallback.add_child(PropFactory.box(Vector3(1.0, 0.8, 0.9), Color(0.46, 0.34, 0.22), Vector3(0, 0.4, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:261",
+      "code": "fallback.add_child(PropFactory.box(Vector3(1.04, 0.12, 0.94), Color(0.36, 0.26, 0.16), Vector3(0, 0.86, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:281",
+      "code": "board.add_child(PropFactory.cylinder(0.08, 1.8, Color(0.40, 0.30, 0.20), Vector3(-0.6, 0.9, 0), -1.0, 6))"
+    },
+    {
+      "source": "scenes/world/camp.gd:282",
+      "code": "board.add_child(PropFactory.cylinder(0.08, 1.8, Color(0.40, 0.30, 0.20), Vector3(0.6, 0.9, 0), -1.0, 6))"
+    },
+    {
+      "source": "scenes/world/camp.gd:283",
+      "code": "board.add_child(PropFactory.box(Vector3(1.7, 1.0, 0.08), Color(0.55, 0.42, 0.28), Vector3(0, 1.5, 0)))"
+    },
+    {
+      "source": "scenes/world/camp.gd:294",
+      "code": "point.add_child(PropFactory.cylinder(1.2, 0.25, Color(0.52, 0.52, 0.55), Vector3(0, 0.12, 0), 1.0, 8))"
+    },
+    {
+      "source": "scenes/world/camp.gd:295",
+      "code": "point.add_child(PropFactory.cylinder(0.18, 1.6, Color(0.60, 0.62, 0.68), Vector3(0, 0.9, 0), 0.12, 8))"
+    },
+    {
+      "source": "scenes/world/camp.gd:296",
+      "code": "var crystal := PropFactory.cylinder(0.22, 0.5, Color(0.55, 0.85, 1.0), Vector3(0, 1.9, 0), 0.0, 6)"
+    },
+    {
+      "source": "scenes/world/camp.gd:297",
+      "code": "var crystal_mat := crystal.material_override as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/chest.gd:52",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.95, 0.45, 0.6), Color(0.44, 0.31, 0.19), Vector3(0, 0.225, 0)))"
+    },
+    {
+      "source": "scenes/world/chest.gd:56",
+      "code": "lid_pivot.add_child(PropFactory.box(Vector3(0.99, 0.2, 0.64), Color(0.50, 0.36, 0.22), Vector3(0, 0.1, 0.3)))"
+    },
+    {
+      "source": "scenes/world/chest.gd:63",
+      "code": "var trim := PropFactory.box(Vector3(1.0, 0.08, 0.64), trim_color, Vector3(0, 0.44, 0))"
+    },
+    {
+      "source": "scenes/world/chest.gd:64",
+      "code": "var trim_mat := trim.material_override as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/chest.gd:70",
+      "code": "fallback.add_child(PropFactory.box(Vector3(0.1, 0.42, 0.62), trim_color, Vector3(0, 0.22, 0)))"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:20",
+      "code": "var _glow_materials: Array[StandardMaterial3D] = []"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:69",
+      "code": "var source := instance.mesh.surface_get_material(i) as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:71",
+      "code": "var material := source.duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:112",
+      "code": "var mesh := rune_ring.mesh.duplicate() as TorusMesh"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:116",
+      "code": "var material := mesh.material as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:119",
+      "code": "material = material.duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/echo_stone.gd:125",
+      "code": "func _find_glow_material() -> StandardMaterial3D:"
+    },
+    {
+      "source": "scenes/world/echo_stone.tscn:10",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_stone\"]"
+    },
+    {
+      "source": "scenes/world/echo_stone.tscn:14",
+      "code": "[sub_resource type=\"CylinderMesh\" id=\"Mesh_stone\"]"
+    },
+    {
+      "source": "scenes/world/echo_stone.tscn:20",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_rune\"]"
+    },
+    {
+      "source": "scenes/world/echo_stone.tscn:26",
+      "code": "[sub_resource type=\"TorusMesh\" id=\"Mesh_rune\"]"
+    },
+    {
+      "source": "scenes/world/gather_node.tscn:10",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_stem\"]"
+    },
+    {
+      "source": "scenes/world/gather_node.tscn:14",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_leaf\"]"
+    },
+    {
+      "source": "scenes/world/gather_node.tscn:20",
+      "code": "[sub_resource type=\"CylinderMesh\" id=\"Mesh_stem\"]"
+    },
+    {
+      "source": "scenes/world/gather_node.tscn:26",
+      "code": "[sub_resource type=\"SphereMesh\" id=\"Mesh_leaf\"]"
+    },
+    {
+      "source": "scenes/world/poi_waterfall.gd:5",
+      "code": "var _flow_materials: Array[StandardMaterial3D] = []"
+    },
+    {
+      "source": "scenes/world/poi_waterfall.gd:52",
+      "code": "var mat := mesh.mesh.surface_get_material(surface).duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/prop_factory.gd:7",
+      "code": "static func material(color: Color, roughness := 0.85, metallic := 0.0, emission := Color.BLACK, emission_energy := 1.0) -> StandardMaterial3D:"
+    },
+    {
+      "source": "scenes/world/prop_factory.gd:8",
+      "code": "var mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/prop_factory.gd:20",
+      "code": "var mesh := BoxMesh.new()"
+    },
+    {
+      "source": "scenes/world/prop_factory.gd:30",
+      "code": "var mesh := CylinderMesh.new()"
+    },
+    {
+      "source": "scenes/world/prop_factory.gd:43",
+      "code": "var mesh := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/world/quest_pickup.tscn:9",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_book\"]"
+    },
+    {
+      "source": "scenes/world/quest_pickup.tscn:12",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_book\"]"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:21",
+      "code": "var _creek_material: StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:153",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:226",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:292",
+      "code": "var fallback := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:295",
+      "code": "_creek_material = _ground_material(\"res://art/models/scenery/creek_water.glb\", fallback).duplicate() as StandardMaterial3D"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:547",
+      "code": "func _veg_material() -> StandardMaterial3D:"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:548",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:558",
+      "code": "var trunk := CylinderMesh.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:570",
+      "code": "var cone := CylinderMesh.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:581",
+      "code": "var sphere := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/world/terrain_builder.gd:598",
+      "code": "var sphere := SphereMesh.new()"
+    },
+    {
+      "source": "scenes/world/weather_system.gd:132",
+      "code": "var drop := BoxMesh.new()"
+    },
+    {
+      "source": "scenes/world/weather_system.gd:134",
+      "code": "var drop_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "dev/art_work/boss_before_upgrade.gd:80",
+      "code": "var line_mesh := BoxMesh.new()"
+    },
+    {
+      "source": "dev/art_work/boss_before_upgrade.gd:82",
+      "code": "var line_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "dev/art_work/boss_before_upgrade.gd:97",
+      "code": "var wedge_mat := StandardMaterial3D.new()"
+    },
+    {
+      "source": "dev/capture_wolf_motion.gd:71",
+      "code": "func _checker_material() -> StandardMaterial3D:"
+    },
+    {
+      "source": "dev/capture_wolf_motion.gd:77",
+      "code": "var material := StandardMaterial3D.new()"
+    },
+    {
+      "source": "dev/test_combat.tscn:21",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_ground\"]"
+    },
+    {
+      "source": "dev/test_combat.tscn:27",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_ground\"]"
+    },
+    {
+      "source": "dev/test_combat.tscn:30",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_dummy\"]"
+    },
+    {
+      "source": "dev/test_combat.tscn:38",
+      "code": "[sub_resource type=\"CapsuleMesh\" id=\"Mesh_dummy\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:22",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_ground\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:28",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_ground\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:31",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_obstacle\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:38",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_pillar\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:45",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_rock_a\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:52",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_rock_b\"]"
+    },
+    {
+      "source": "dev/test_enemies.tscn:59",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_wall\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:21",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_ground\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:24",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_ground\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:30",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_box_a\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:36",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_box_b\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:42",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_box_c\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:48",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_ramp\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:54",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_platform\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:61",
+      "code": "[sub_resource type=\"CylinderMesh\" id=\"Mesh_stele\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:72",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_pool\"]"
+    },
+    {
+      "source": "dev/test_movement.tscn:75",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_pool\"]"
+    },
+    {
+      "source": "dev/test_quests.tscn:27",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_ground\"]"
+    },
+    {
+      "source": "dev/test_quests.tscn:33",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_ground\"]"
+    },
+    {
+      "source": "dev/test_quests.tscn:36",
+      "code": "[sub_resource type=\"StandardMaterial3D\" id=\"Mat_obstacle\"]"
+    },
+    {
+      "source": "dev/test_quests.tscn:43",
+      "code": "[sub_resource type=\"BoxMesh\" id=\"Mesh_rock\"]"
+    },
+    {
+      "source": "dev/verify_camp_forge.gd:25",
+      "code": "var mat := mesh.mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_camp_hut.gd:23",
+      "code": "var mat := mesh.mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_chest_art.gd:28",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_creek.gd:34",
+      "code": "var mat: StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_creek.gd:51",
+      "code": "var water_mat := terrain.get_node(\"CreekWater\").material_override as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_echo_stone.gd:28",
+      "code": "var mat := instance.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_echo_stone.gd:34",
+      "code": "var other: StandardMaterial3D=second._find_glow_material()"
+    },
+    {
+      "source": "dev/verify_echo_stone.gd:35",
+      "code": "var source := instance.mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_forest_rock.gd:36",
+      "code": "var mat := mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_forest_shaman.gd:38",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_forest_shaman.gd:111",
+      "code": "var mat := material as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_forest_surface.gd:12",
+      "code": "func check_material(mat: StandardMaterial3D, label: String) -> void:"
+    },
+    {
+      "source": "dev/verify_forest_surface.gd:38",
+      "code": "check_material(visual.material_override as StandardMaterial3D,name)"
+    },
+    {
+      "source": "dev/verify_forest_surface.gd:43",
+      "code": "print(\"SURFACE_DIAG \",name,\" normal=\",arrays[Mesh.ARRAY_NORMAL][0],\" alpha_mode=\",(visual.material_override as StandardMaterial3D).transparency)"
+    },
+    {
+      "source": "dev/verify_forest_surface.gd:49",
+      "code": "var mat := visual.material_override as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_forest_surface.gd:68",
+      "code": "check_material(mesh.surface_get_material(0) as StandardMaterial3D,name)"
+    },
+    {
+      "source": "dev/verify_herb.gd:32",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_humanoid_cast.gd:42",
+      "code": "var material := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_hunter_cabin.gd:33",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_iron_sword.gd:17",
+      "code": "var material := mesh.surface_get_material(surface) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_moss_boar.gd:36",
+      "code": "var material := mesh.mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_observatory.gd:33",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_remaining_assets.gd:33",
+      "code": "var material := node.get_active_material(surface) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_storage_crate.gd:25",
+      "code": "var mat := mesh.mesh.surface_get_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_tent.gd:31",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_timber_wolf.gd:37",
+      "code": "var material := mesh_instance.mesh.surface_get_material(surface) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_waterfall.gd:43",
+      "code": "var mat := node.get_active_material(0) as StandardMaterial3D"
+    },
+    {
+      "source": "dev/verify_waterfall.gd:49",
+      "code": "var flow: StandardMaterial3D = waterfall._flow_materials[0]"
+    }
+  ]
+}

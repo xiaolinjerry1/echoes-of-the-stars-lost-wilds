@@ -1,0 +1,382 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/hud.gd" id="1_hud"]
+[ext_resource type="PackedScene" path="res://scenes/ui/echo_panel.tscn" id="2_echo_panel"]
+[ext_resource type="PackedScene" path="res://scenes/ui/inventory_panel.tscn" id="3_inv_panel"]
+[ext_resource type="PackedScene" path="res://scenes/ui/dialogue_box.tscn" id="4_dialogue"]
+[ext_resource type="PackedScene" path="res://scenes/ui/map_panel.tscn" id="5_map"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="DamageVignette" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.55, 0.05, 0.05, 1)
+modulate = Color(1, 1, 1, 0)
+
+[node name="EchoVignette" type="Control" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="VTop" type="ColorRect" parent="EchoVignette"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 26.0
+grow_horizontal = 2
+mouse_filter = 2
+color = Color(0.45, 0.75, 1, 0.22)
+
+[node name="VBottom" type="ColorRect" parent="EchoVignette"]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+color = Color(0.45, 0.75, 1, 0.22)
+
+[node name="VLeft" type="ColorRect" parent="EchoVignette"]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 26.0
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.45, 0.75, 1, 0.22)
+
+[node name="VRight" type="ColorRect" parent="EchoVignette"]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -26.0
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.45, 0.75, 1, 0.22)
+
+[node name="SpiritPanel" type="ColorRect" parent="."]
+offset_left = 12.0
+offset_top = 40.0
+offset_right = 56.0
+offset_bottom = 84.0
+color = Color(1, 0.85, 0.45, 0.9)
+
+[node name="SpiritIconLabel" type="Label" parent="SpiritPanel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.1, 0.08, 0.05, 1)
+theme_override_font_sizes/font_size = 16
+text = "辉光"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpiritFeedback" type="Label" parent="."]
+offset_left = 62.0
+offset_top = 46.0
+offset_right = 280.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.6, 1.0, 0.65, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 16
+
+[node name="EchoIcon" type="ColorRect" parent="."]
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -186.0
+offset_right = -284.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.3, 0.3, 0.35, 0.9)
+
+[node name="EchoIconLabel" type="Label" parent="EchoIcon"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.08, 0.08, 0.1, 1)
+theme_override_font_sizes/font_size = 13
+text = "无"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnergyBar" type="ProgressBar" parent="."]
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -276.0
+offset_top = -180.0
+offset_right = -76.0
+offset_bottom = -168.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 100.0
+value = 100.0
+show_percentage = false
+
+[node name="ActiveTimeBar" type="ProgressBar" parent="."]
+visible = false
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -276.0
+offset_top = -164.0
+offset_right = -76.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 12.0
+value = 0.0
+show_percentage = false
+
+[node name="EchoSlotPanel1" type="ColorRect" parent="."]
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -60.0
+offset_top = -186.0
+offset_right = 60.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.1, 0.12, 0.18, 0.8)
+
+[node name="EchoSlot1" type="Label" parent="EchoSlotPanel1"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.9)
+theme_override_font_sizes/font_size = 13
+text = "◎ 未激活"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EchoSlotPanel2" type="ColorRect" parent="."]
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 70.0
+offset_top = -186.0
+offset_right = 190.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 0
+color = Color(0.1, 0.12, 0.18, 0.8)
+
+[node name="EchoSlot2" type="Label" parent="EchoSlotPanel2"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 0.9)
+theme_override_font_sizes/font_size = 13
+text = "◎ 未激活"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EchoHint" type="Label" parent="."]
+anchors_preset = 3
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -276.0
+offset_top = -110.0
+offset_right = 300.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.75, 0.78, 0.85, 0.9)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 11
+text = "Q 激活 / R 切换准备槽 · Z X 回响技能 · I 回响收藏 · Tab 背包 · M 地图 · P 拍照"
+
+[node name="QuestTracker" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -360.0
+offset_top = 90.0
+offset_right = -12.0
+offset_bottom = 330.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.92, 0.92, 0.85, 0.95)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.85)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 2
+
+[node name="QuestArrow" type="Label" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -190.0
+offset_right = 90.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.85, 0.4, 0.95)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.85)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="InteractHint" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -250.0
+offset_top = 76.0
+offset_right = 250.0
+offset_bottom = 108.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 18
+text = "按 E 交互"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="CombatFeedback" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = 112.0
+offset_right = 300.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.95, 0.75, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="BoundaryWarning" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.15
+anchor_right = 0.5
+anchor_bottom = 0.15
+offset_left = -350.0
+offset_top = 0.0
+offset_right = 350.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.55, 0.45, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="StatusLabel" type="Label" parent="."]
+offset_left = 12.0
+offset_top = 96.0
+offset_right = 460.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(1, 1, 1, 0.8)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.8)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 15
+
+[node name="EchoPanel" parent="." instance=ExtResource("2_echo_panel")]
+
+[node name="InventoryPanel" parent="." instance=ExtResource("3_inv_panel")]
+
+[node name="DialogueBox" parent="." instance=ExtResource("4_dialogue")]
+
+[node name="MapPanel" parent="." instance=ExtResource("5_map")]
+
+[node name="MemoryOverlay" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.12, 0.16, 0.24, 1)
+
+[node name="MemoryTitle" type="Label" parent="MemoryOverlay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -110.0
+offset_right = 400.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.85, 0.92, 1, 1)
+theme_override_font_sizes/font_size = 34
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MemoryText" type="Label" parent="MemoryOverlay"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -420.0
+offset_top = -20.0
+offset_right = 420.0
+offset_bottom = 120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.75, 0.82, 0.95, 1)
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+autowrap_mode = 3

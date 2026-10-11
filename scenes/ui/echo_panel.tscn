@@ -1,0 +1,102 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scenes/ui/echo_panel.gd" id="1"]
+
+[node name="EchoPanel" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+[node name="Dim" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.6)
+
+[node name="Frame" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -460.0
+offset_top = -300.0
+offset_right = 460.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FrameBg" type="ColorRect" parent="Frame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.08, 0.09, 0.13, 0.96)
+
+[node name="Title" type="Label" parent="Frame"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 12.0
+offset_right = 900.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.93, 0.86, 0.62, 1)
+theme_override_font_sizes/font_size = 28
+text = "世界回响"
+horizontal_alignment = 1
+
+[node name="EnergyLabel" type="Label" parent="Frame"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 56.0
+offset_right = 900.0
+offset_bottom = 84.0
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+
+[node name="Slot1Button" type="Button" parent="Frame"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 92.0
+offset_right = 300.0
+offset_bottom = 126.0
+theme_override_font_sizes/font_size = 14
+
+[node name="Slot2Button" type="Button" parent="Frame"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 92.0
+offset_right = 600.0
+offset_bottom = 126.0
+theme_override_font_sizes/font_size = 14
+
+[node name="CardList" type="HBoxContainer" parent="Frame"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 140.0
+offset_right = 900.0
+offset_bottom = 540.0
+theme_override_constants/separation = 20
+
+[node name="HintLabel" type="Label" parent="Frame"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 556.0
+offset_right = 900.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(0.7, 0.7, 0.75, 1)
+theme_override_font_sizes/font_size = 13
+text = "点击准备槽选择位置，再点击回响卡片装备 · 按 I 关闭"
+horizontal_alignment = 1

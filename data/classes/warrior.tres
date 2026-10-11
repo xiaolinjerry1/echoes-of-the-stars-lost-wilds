@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="ClassData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="1_agnmr"]
+[ext_resource type="Script" path="res://data/classes/class_data.gd" id="2_rqqb5"]
+
+[sub_resource type="Resource" id="Resource_kv6er"]
+script = ExtResource("1_agnmr")
+description = "战士的基础挥砍。"
+cooldown = 0.5
+cast_time = 0.1
+damage_base = 8.0
+damage_coefficient = 0.8
+range = 2.5
+combat_tags = Array[String](["physical", "heavy"])
+id = "warrior_basic"
+display_name = "剑击"
+
+[sub_resource type="Resource" id="Resource_8y3rw"]
+script = ExtResource("1_agnmr")
+description = "朝准星方向冲刺，命中第一个敌人造成伤害并短暂眩晕 0.5 秒。"
+cooldown = 8.0
+focus_cost = 15.0
+cast_time = 0.1
+damage_base = 12.0
+damage_coefficient = 1.0
+range = 8.0
+combat_tags = Array[String](["physical"])
+id = "warrior_charge"
+display_name = "冲锋"
+
+[sub_resource type="Resource" id="Resource_i8kcp"]
+script = ExtResource("1_agnmr")
+description = "横扫身前 120° 扇形区域；若目标处于冻结状态，触发「碎冰」附加 50% 伤害并清除冻结。"
+skill_type = "aoe"
+cooldown = 6.0
+focus_cost = 20.0
+cast_time = 0.3
+damage_base = 10.0
+damage_coefficient = 0.9
+range = 3.0
+combat_tags = Array[String](["physical", "heavy"])
+id = "warrior_sweep"
+display_name = "横扫"
+
+[sub_resource type="Resource" id="Resource_2dk3a"]
+script = ExtResource("1_agnmr")
+description = "5 秒内自身攻击强度 +20%，并嘲讽周围小范围敌人。"
+skill_type = "buff"
+cooldown = 15.0
+focus_cost = 25.0
+combat_tags = Array[String](["physical"])
+id = "warrior_roar"
+display_name = "战吼"
+
+[resource]
+script = ExtResource("2_rqqb5")
+description = "近战持盾职业，攻守兼备，以冲锋与横扫压制敌人。"
+max_health = 120.0
+max_focus = 80.0
+focus_regen = 6.0
+base_attack_power = 15.0
+armor = 10.0
+starting_weapon_id = "rusty_sword"
+basic_attack = SubResource("Resource_kv6er")
+class_skills = Array[ExtResource("1_agnmr")]([SubResource("Resource_8y3rw"), SubResource("Resource_i8kcp"), SubResource("Resource_2dk3a")])
+hud_color = Color(0.9, 0.6, 0.2, 1)
+id = "warrior"
+display_name = "战士"

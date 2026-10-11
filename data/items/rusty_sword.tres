@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "rusty_sword"
+display_name = "锈迹长剑"
+item_type = "weapon"
+quality = "common"
+attack_power = 5.0
+description = "锈迹斑斑的旧剑，还能挥动。"
+model_path = "res://art/models/player/iron_sword.glb"

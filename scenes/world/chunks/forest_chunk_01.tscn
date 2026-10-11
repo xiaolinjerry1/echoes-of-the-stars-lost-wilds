@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scenes/world/world_chunk.gd" id="1_chunk"]
+[ext_resource type="PackedScene" path="res://scenes/world/poi_observatory.tscn" id="2_obs"]
+[ext_resource type="PackedScene" path="res://scenes/world/chest.tscn" id="4_chest"]
+[ext_resource type="PackedScene" path="res://scenes/world/quest_area.tscn" id="5_area"]
+[ext_resource type="PackedScene" path="res://scenes/world/gather_node.tscn" id="6_gather"]
+[ext_resource type="Script" path="res://scenes/world/enemy_spawn.gd" id="7_spawn"]
+
+[node name="ForestChunk01" type="Node3D"]
+script = ExtResource("1_chunk")
+chunk_id = "forest_chunk_01"
+
+[node name="Observatory" parent="." instance=ExtResource("2_obs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 0.303, -54)
+
+[node name="QuestAreaObservatory" parent="." instance=ExtResource("5_area")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 68, 0.303, -54)
+area_id = "old_observatory"
+
+[node name="ChestObservatory" parent="." instance=ExtResource("4_chest")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70, 0.301, -40)
+chest_id = "chest_observatory"
+loot_table = "chest_normal"
+
+[node name="MageSpawnC" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0, -44)
+script = ExtResource("7_spawn")
+enemy_type = "mage"
+patrol_radius = 6.0
+
+[node name="BoarSpawnA" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -14)
+script = ExtResource("7_spawn")
+enemy_type = "boar"
+patrol_radius = 6.0
+
+[node name="BoarSpawnB" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, -6)
+script = ExtResource("7_spawn")
+enemy_type = "boar"
+patrol_radius = 6.0
+
+[node name="EliteBoarSpawn" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, -10)
+script = ExtResource("7_spawn")
+enemy_type = "elite_boar"
+patrol_radius = 10.0
+
+[node name="GatherB" parent="." instance=ExtResource("6_gather")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, -0.109, -20)

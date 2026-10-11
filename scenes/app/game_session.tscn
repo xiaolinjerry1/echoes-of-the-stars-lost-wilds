@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scenes/app/game_session.gd" id="1_session"]
+
+[node name="GameSession" type="Node3D"]
+script = ExtResource("1_session")
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="Player" type="Node3D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="WorldState" type="Node" parent="."]
+
+[node name="Environment" type="Node3D" parent="."]

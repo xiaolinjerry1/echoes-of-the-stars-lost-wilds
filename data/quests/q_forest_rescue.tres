@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_57nnm"]
+
+[resource]
+script = ExtResource("1_57nnm")
+description = "营地东侧森林有巡林者失踪，狼群出没。"
+is_main = true
+giver_npc = "elin"
+turn_in_npc = "wounded_ranger"
+objectives = [{
+"count": 1,
+"description": "前往营地东侧森林",
+"target_id": "forest_east",
+"type": "explore"
+}, {
+"count": 3,
+"description": "击败森林野狼",
+"target_id": "timber_wolf",
+"type": "kill"
+}, {
+"count": 1,
+"description": "与受伤的巡林者对话",
+"target_id": "wounded_ranger",
+"type": "talk"
+}]
+rewards = {
+"exp": 50,
+"gold": 100,
+"items": [{
+"count": 1,
+"item_id": "iron_sword"
+}]
+}
+offer_lines = Array[String](["营地的东边不太平，狼群又多了。", "有个巡林者去了东边森林，到现在还没回来。", "去找找他，顺手清掉几只狼——拜托了。"])
+complete_lines = Array[String](["他平安回来了，多亏了你。", "这把备用的剑给你，路上小心。"])
+id = "q_forest_rescue"
+display_name = "森林里的呼救"

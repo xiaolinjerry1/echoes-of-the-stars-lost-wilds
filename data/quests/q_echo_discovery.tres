@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_kec3b"]
+
+[resource]
+script = ExtResource("1_kec3b")
+description = "与旧观测所遗迹的回响碑共鸣，获得霜灯学者的力量。"
+quest_type = "echo"
+is_main = true
+prerequisites = Array[String](["q_forest_rescue"])
+giver_npc = "wounded_ranger"
+turn_in_npc = "wounded_ranger"
+objectives = [{
+"count": 1,
+"description": "前往旧观测所遗迹",
+"target_id": "old_observatory",
+"type": "explore"
+}, {
+"count": 1,
+"description": "与回响碑共鸣，获得霜灯学者的回响",
+"target_id": "frost_lamp_scholar",
+"type": "echo"
+}]
+rewards = {
+"exp": 80,
+"gold": 150
+}
+offer_lines = Array[String](["我在林子里见过一块会发光的石碑……", "那是旧观测所的位置，西南方向。", "去和它共鸣吧，那道光应该属于你。"])
+complete_lines = Array[String](["那道蓝光……她终于安心了。", "有了这份回响，冰霜会帮你的。"])
+id = "q_echo_discovery"
+display_name = "旧观测所的回响"

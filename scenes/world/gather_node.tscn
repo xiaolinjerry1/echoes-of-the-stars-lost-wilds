@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scenes/world/gather_node.gd" id="1"]
+[ext_resource type="Script" path="res://scenes/player/components/interactable.gd" id="2_interact"]
+
+[sub_resource type="CylinderShape3D" id="Shape_gather"]
+radius = 0.4
+height = 0.8
+
+[sub_resource type="StandardMaterial3D" id="Mat_stem"]
+albedo_color = Color(0.35, 0.5, 0.22, 1)
+roughness = 0.9
+
+[sub_resource type="StandardMaterial3D" id="Mat_leaf"]
+emission_enabled = true
+emission = Color(0.4, 0.85, 0.4, 1)
+emission_energy_multiplier = 0.5
+albedo_color = Color(0.45, 0.8, 0.4, 1)
+
+[sub_resource type="CylinderMesh" id="Mesh_stem"]
+material = SubResource("Mat_stem")
+top_radius = 0.06
+bottom_radius = 0.09
+height = 0.6
+
+[sub_resource type="SphereMesh" id="Mesh_leaf"]
+material = SubResource("Mat_leaf")
+radius = 0.22
+height = 0.44
+
+[sub_resource type="SphereShape3D" id="Shape_interact"]
+radius = 1.2
+
+[node name="GatherNode" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 0
+script = ExtResource("1")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+shape = SubResource("Shape_gather")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Stem" type="MeshInstance3D" parent="Visual"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+mesh = SubResource("Mesh_stem")
+
+[node name="Leaves" type="MeshInstance3D" parent="Visual"]
+transform = Transform3D(1.2, 0, 0, 0, 0.8, 0, 0, 0, 1.2, 0, 0.62, 0)
+mesh = SubResource("Mesh_leaf")
+
+[node name="Interactable" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("2_interact")
+interact_text = "采集草药"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Interactable"]
+shape = SubResource("Shape_interact")

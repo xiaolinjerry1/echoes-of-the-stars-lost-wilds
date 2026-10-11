@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_o3u6i"]
+
+[resource]
+script = ExtResource("1_o3u6i")
+description = "猎人老杰克三天未归，去南边的猎人小屋看看。"
+quest_type = "explore"
+giver_npc = "mara"
+turn_in_npc = "mara"
+objectives = [{
+"count": 1,
+"description": "前往猎人小屋",
+"target_id": "hunter_cabin",
+"type": "explore"
+}, {
+"count": 2,
+"description": "击败小屋附近的施法怪",
+"target_id": "forest_mage",
+"type": "kill"
+}, {
+"count": 1,
+"description": "拾取猎人的日记",
+"target_id": "hunter_diary",
+"type": "collect"
+}]
+rewards = {
+"exp": 60,
+"gold": 120,
+"items": [{
+"count": 1,
+"item_id": "vigor_pendant"
+}]
+}
+offer_lines = Array[String](["猎人老杰克，三天没回来吃饭了。", "去南边的猎人小屋看看吧……我总有不祥的预感。"])
+complete_lines = Array[String](["这是他的日记……谢谢你，至少有了个交代。", "这个坠子是他送我的，你带着吧。"])
+id = "q_missing_hunter"
+display_name = "失踪的猎人"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="SpiritData" format=3]
+
+[ext_resource type="Script" path="res://data/spirits/spirit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "flame_crystal"
+display_name = "烈焰晶灵"
+description = "橙红色碎片状飞行精灵，自动追踪敌人攻击，给玩家提供火焰伤害加成。"
+role = "damage"
+model_path = "res://art/models/spirit/flame_crystal.glb"
+auto_attack_interval = 2.5
+auto_attack_damage = 5.0
+auto_attack_range = 12.0
+flame_damage_bonus = 0.08
+growth_coefficient = 0.08

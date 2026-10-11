@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="QuestData" format=3]
+
+[ext_resource type="Script" path="res://data/quests/quest_data.gd" id="1_r1f31"]
+
+[resource]
+script = ExtResource("1_r1f31")
+description = "掌握冰环与碎冰的连招，击败精英苔牙野猪。"
+quest_type = "elite"
+is_main = true
+prerequisites = Array[String](["q_echo_discovery"])
+giver_npc = "wounded_ranger"
+turn_in_npc = "wounded_ranger"
+objectives = [{
+"count": 2,
+"description": "用冰环冻结敌人",
+"target_id": "frozen",
+"type": "freeze"
+}, {
+"count": 1,
+"description": "用横扫触发一次「碎冰」",
+"target_id": "shatter",
+"type": "combo"
+}, {
+"count": 1,
+"description": "击败精英苔牙野猪",
+"target_id": "moss_boar",
+"type": "kill"
+}]
+rewards = {
+"exp": 120,
+"gold": 200,
+"items": [{
+"count": 1,
+"item_id": "frost_edge"
+}]
+}
+world_state_changes = Array[String](["secret_realm_open"])
+offer_lines = Array[String](["霜灯的力量，要用得巧。", "先用冰环冻住敌人，再横扫打出「碎冰」——去练练手。", "西边有头异常强壮的苔牙野猪，小心它的冲锋。"])
+complete_lines = Array[String](["碎冰……好漂亮的收招。", "这柄「霜痕之刃」配得上你。", "苔冠巨兽就在营地北方的林间遗迹，地图标着「兽」，沿路走过去就能找到。"])
+id = "q_frost_trial"
+display_name = "冰封试炼"

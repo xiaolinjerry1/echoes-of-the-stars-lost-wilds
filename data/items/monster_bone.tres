@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "monster_bone"
+display_name = "怪物骨头"
+item_type = "material"
+quality = "common"
+description = "从怪物身上留下的骨头，锻造时能派上用场。"

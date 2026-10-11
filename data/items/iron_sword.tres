@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "iron_sword"
+display_name = "铁剑"
+item_type = "weapon"
+quality = "uncommon"
+attack_power = 10.0
+crit_chance = 0.02
+description = "锻炉里出来的标准铁剑，握感扎实。"
+model_path = "res://art/models/player/iron_sword.glb"

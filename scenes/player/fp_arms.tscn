@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scenes/player/fp_arms.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://art/models/player/iron_sword.glb" id="2_sword"]
+[ext_resource type="PackedScene" path="res://art/models/player/warrior_arms.glb" id="3_arms"]
+
+[node name="FPArms" type="Node3D"]
+script = ExtResource("1_script")
+
+[node name="WarriorArms" parent="." instance=ExtResource("3_arms")]
+
+[node name="WeaponMount" type="Node3D" parent="."]
+
+[node name="IronSword" parent="WeaponMount" instance=ExtResource("2_sword")]

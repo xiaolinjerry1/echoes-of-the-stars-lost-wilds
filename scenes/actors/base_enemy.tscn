@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://scenes/actors/base_enemy.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://scenes/actors/hit_area.gd" id="2_hit"]
+[ext_resource type="Script" path="res://scenes/combat/status_effect_component.gd" id="3_status"]
+
+[sub_resource type="CapsuleShape3D" id="Shape_enemy"]
+radius = 0.35
+height = 1.2
+
+[node name="BaseEnemy" type="CharacterBody3D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_enemy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+shape = SubResource("Shape_enemy")
+
+[node name="HitArea" type="Area3D" parent="."]
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("2_hit")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="HitArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+shape = SubResource("Shape_enemy")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="StatusEffectComponent" type="Node" parent="."]
+script = ExtResource("3_status")
+
+[node name="HealthBar" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9, 0)
+
+[node name="Bg" type="Sprite3D" parent="HealthBar"]
+pixel_size = 1.0
+billboard = 1
+no_depth_test = true
+modulate = Color(0.06, 0.06, 0.08, 0.9)
+scale = Vector3(0.45, 0.05, 1)
+
+[node name="Fill" type="Sprite3D" parent="HealthBar"]
+pixel_size = 1.0
+billboard = 1
+no_depth_test = true
+render_priority = 1
+scale = Vector3(0.45, 0.05, 1)

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "iron_chest"
+display_name = "铁制胸甲"
+item_type = "chest"
+quality = "uncommon"
+armor = 8.0
+max_health_bonus = 20.0
+description = "扎实用料的胸甲，能挡下不少伤害。"

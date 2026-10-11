@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="EchoData" format=3]
+
+[ext_resource type="Script" path="res://data/skills/skill_data.gd" id="1_ccjsc"]
+[ext_resource type="Script" path="res://data/echoes/echo_data.gd" id="2_c5tyx"]
+
+[sub_resource type="Resource" id="Resource_831xx"]
+script = ExtResource("1_ccjsc")
+description = "以自身为中心的冰环，冻结范围内所有普通敌人 2.5 秒；精英/BOSS 只减速 50%。"
+skill_type = "aoe"
+cooldown = 4.0
+damage_base = 6.0
+damage_coefficient = 0.5
+range = 5.0
+combat_tags = Array[String](["frost"])
+status_effect = "frozen"
+status_duration = 2.5
+id = "frost_ring"
+display_name = "冰环"
+
+[sub_resource type="Resource" id="Resource_voymc"]
+script = ExtResource("1_ccjsc")
+description = "发射一枚冰弹，命中后造成伤害并施加寒意（减速 30%）。"
+skill_type = "ranged"
+cooldown = 1.5
+damage_base = 10.0
+damage_coefficient = 0.8
+range = 20.0
+combat_tags = Array[String](["frost", "precise"])
+status_effect = "chilled"
+status_duration = 3.0
+id = "frost_crystal_bolt"
+display_name = "寒晶弹"
+
+[resource]
+script = ExtResource("2_c5tyx")
+title = "旧观测所的守灯人"
+memory_text = "她在最后的夜晚点亮了所有冰灯，说记忆不会因为寒冷而消失。"
+source_location = "晨露林地 - 旧观测所遗迹"
+visual_theme_color = Color(0.4, 0.7, 1, 1)
+echo_skills = Array[ExtResource("1_ccjsc")]([SubResource("Resource_831xx"), SubResource("Resource_voymc")])
+combat_tag = "frost"
+id = "frost_lamp_scholar"
+display_name = "霜灯学者"

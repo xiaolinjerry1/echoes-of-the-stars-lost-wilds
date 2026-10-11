@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="SpiritData" format=3]
+
+[ext_resource type="Script" path="res://data/spirits/spirit_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "glow_wisp"
+display_name = "辉光萤灵"
+description = "暖黄色微光小飞行精灵，周期性给玩家回血，重伤时提供应急护盾。"
+role = "heal"
+model_path = "res://art/models/spirit/glow_wisp.glb"
+passive_heal_interval = 10.0
+passive_heal_amount = 8.0
+emergency_shield_threshold = 0.3
+emergency_shield_amount = 30.0
+emergency_shield_cooldown = 45.0
+growth_coefficient = 0.08

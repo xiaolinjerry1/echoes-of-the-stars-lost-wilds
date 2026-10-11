@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" format=3]
+
+[ext_resource type="Script" path="res://data/items/item_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "vigor_pendant"
+display_name = "活力吊坠"
+item_type = "accessory"
+quality = "uncommon"
+max_health_bonus = 30.0
+focus_regen_bonus = 1.0
+description = "温润的坠子，戴着让人有精神。"
